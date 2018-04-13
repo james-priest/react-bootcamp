@@ -67,7 +67,7 @@
 	"plugins": [
 		"html",
 		"react"
-    ],
+	],
     // Explicitly setting a value here will take priority over local rc config
     "env": {
 		// "amd": true,
@@ -82,14 +82,13 @@
     },
     // "extends": "eslint:recommended",
 	//"extends": "airbnb-base",
-	"extends": [
-		"eslint:recommended"
-	],
+	// "extends": [
+	// 	"eslint:recommended"
+	// ],
     "parserOptions": {
-		"sourceType": "module",
-        // "sourceType": "script",
-        // "sourceType": "module",
-		// "ecmaVersion": 6,
+		// "sourceType": "module",
+        "sourceType": "script",
+		"ecmaVersion": 6,
 		"ecmaFeatures": {
 			"modules": true,
 			"jsx": true
@@ -115,9 +114,9 @@
 		// 	"error",
 		// 	"always"
 		// ],
-		"semi": 0,
+		"semi": 1,
 		"no-console": "off",
-		"no-unused-vars": 0
+		"no-unused-vars": "off"
 	},
 	"globals": {
 		"React": true,

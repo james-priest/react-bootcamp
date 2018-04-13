@@ -19,7 +19,7 @@
             </li>
           ))}
         </ul>
-      )
+      );
     }
 
     class App extends React.Component {
@@ -28,21 +28,21 @@
 
         this.state = {
           friends: ['james', 'joe', 'steve']
-        }
+        };
       }
       render() {
         return (
           <div>
             <FriendsList list={this.state.friends} />
           </div>
-        )
+        );
       }
     }
 
     ReactDOM.render(
       <App />,
       document.getElementById('app')
-    )
+    );
   </script>
 </body>
 </html>
